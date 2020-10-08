@@ -1,0 +1,10 @@
+.search__btn {
+  position: absolute;
+  right: 0;
+  border-radius: 100px;
+  background-color: #347eff;
+  height: 64px;
+  max-width: 168px;
+  width: 100%;
+  border: 0px;
+}

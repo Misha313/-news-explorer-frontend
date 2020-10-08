@@ -1,0 +1,9 @@
+@import url(./__content/main__content.css);
+@import url(./__title/main__title.css);
+@import url(./__subtitle/main__subtitle.css);
+@import url(./search/search.css);
+
+.main {
+  display: flex;
+  justify-content: center;
+}

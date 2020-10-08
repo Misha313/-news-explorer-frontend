@@ -1,0 +1,10 @@
+@import url(./header-nav/__link/header-nav__link.css);
+@import url(./header-nav/__button/header-nav__button.css);
+
+.header {
+  max-width: 100%;
+  min-height: 80px;
+  border-bottom: rgba(196, 196, 196, 0. 1) solid 1px;
+  display: flex;
+  justify-content: center;
+}
