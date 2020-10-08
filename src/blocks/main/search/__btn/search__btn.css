@@ -1,10 +1,20 @@
 .search__btn {
   position: absolute;
+  cursor: pointer;
   right: 0;
   border-radius: 100px;
-  background-color: #347eff;
+  background-color: #2F71E5;
+  color: #fff;
   height: 64px;
   max-width: 168px;
   width: 100%;
   border: 0px;
+}
+
+.search__btn:hover {
+  background-color: #347EFF;
+}
+
+.search__btn:active {
+  background-color: #2A65CC;
 }
