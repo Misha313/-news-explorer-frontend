@@ -1,3 +1,4 @@
+@import url(./__tooltip/news-card__tooltip.css);
 @import url(./__image/news-card__image.css);
 @import url(./__save-icon/news-card__save-icon.css);
 @import url(./__content/news-card__content.css);
@@ -20,4 +21,8 @@
 
 .news-card:not(:last-child) {
   margin-right: 16px;
+}
+
+.news-card:hover {
+  box-shadow: 0px 1px 20px 10px rgba(0, 23, 45, 0.1);
 }

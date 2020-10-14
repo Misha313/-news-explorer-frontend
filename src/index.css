@@ -8,6 +8,7 @@
 @import url(./blocks/main/main.css);
 @import url(./blocks/preloader/preloader.css);
 @import url(./blocks/result/result.css);
+@import url(./blocks/search-not-result/search-not-result.css);
 @import url(./blocks/news-card/news-card.css);
 @import url(./blocks/about/about.css);
 @import url(./blocks/footer/footer.css);
