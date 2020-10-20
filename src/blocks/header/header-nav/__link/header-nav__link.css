@@ -1,16 +1,4 @@
-/* .header-nav__link {
-  margin-left: 30px;
-  color: #fff;
-  text-decoration: none;
-}
-
-.header-nav__link:hover {
-  cursor: pointer;
-  border-bottom: 2px solid;
-  padding-bottom: 28px;
-  transition: 0.2s;
-  transition-delay: 0.2s;
-} */
+@import url(./_theme/_light/header-nav__link_theme_light.css);
 
 .header-nav__link {
   margin-left: 30px;
@@ -18,8 +6,12 @@
   cursor: pointer;
   color: #fff;
   text-decoration: none;
+  font-family: roboto;
+  font-style: normal;
   font-size: 18px;
-  display: inline-block;
+  line-height: 24px;
+  align-items: center;
+  text-align: center;
 }
 
 .header-nav__link:hover {

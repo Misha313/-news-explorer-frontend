@@ -1,5 +1,4 @@
-@import url(./header-nav/__link/header-nav__link.css);
-@import url(./header-nav/__button/header-nav__button.css);
+@import url(./header-nav/header-nav.css);
 
 .header {
   max-width: 100%;
