@@ -4,10 +4,24 @@
 @import url(./__keywords/saved-info__keywords.css);
 
 .saved-info {
+  box-sizing: border-box;
   max-width: 1232px;
   display: flex;
   flex-direction: column;
   width: 100%;
   margin: 0 auto;
   padding-bottom: 56px;
+  padding: 0 40px 32px;
+}
+
+@media screen and (max-width: 768px) {
+  .saved-info {
+    max-width: 768px;
+  }
+}
+
+@media screen and (max-width:425px) {
+  .saved-info {
+    padding: 0 16px 32px;
+  }
 }

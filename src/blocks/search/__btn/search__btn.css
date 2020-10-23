@@ -18,3 +18,18 @@
 .search__btn:active {
   background-color: #2A65CC;
 }
+
+@media screen and (max-width:426px) {
+  .search__btn {
+    margin-top: 16px;
+    position: relative;
+    margin-left: 0;
+    border-radius: 100px;
+    border: 1px solid gray;
+    max-width: 1200px;
+    width: 95%;
+    padding-left: 24px;
+    height: 64px;
+    box-sizing: border-box;
+  }
+}

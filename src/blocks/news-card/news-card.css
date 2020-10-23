@@ -19,12 +19,32 @@
   margin-bottom: 16px;
 }
 
-
-
 .news-card:not(:last-child) {
   margin-right: 16px;
 }
 
 .news-card:hover {
   box-shadow: 0px 1px 20px 10px rgba(0, 23, 45, 0.1);
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .news-card {
+    max-width: 224px;
+  }
+
+  .news-card:not(:last-child) {
+    margin-right: 8px;
+  }
+}
+
+@media screen and (max-width: 535px) {
+  .news-card {
+    max-width: 320px;
+  }
+
+  .news-card:not(:last-child) {
+    margin-right: 0px;
+  }
 }

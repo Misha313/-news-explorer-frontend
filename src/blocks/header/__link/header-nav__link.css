@@ -1,5 +1,6 @@
 @import url(./_theme/_light/header-nav__link_theme_light.css);
 
+
 .header-nav__link {
   margin-left: 30px;
   position: relative;
@@ -34,4 +35,19 @@
 .header-nav__link:hover:before {
   visibility: visible;
   transform: scaleX(1);
+}
+
+@media screen and (max-width:650px) {
+  .header-nav__link {
+    margin-left: 16px;
+    margin-bottom: 26px;
+  }
+}
+
+@media screen and (max-width:650px) {
+  .header-nav__link:before {
+    display: none;
+  }
+
+
 }

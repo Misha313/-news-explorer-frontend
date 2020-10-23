@@ -1,0 +1,8 @@
+.popup__footer-link {
+  color: blueviolet;
+}
+
+.popup__footer-link:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}

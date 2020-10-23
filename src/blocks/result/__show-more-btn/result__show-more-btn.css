@@ -9,10 +9,18 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 24px;
+  margin-left: 0;
+  margin-bottom: 80px;
 }
 
 .result__show-more-btn:hover {
   background: #ffffff;
   opacity: .5;
   color: #000;
+}
+
+@media screen and (max-width: 768px) {
+  .result__show-more-btn {
+    margin-bottom: 40px;
+  }
 }

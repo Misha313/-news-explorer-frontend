@@ -1,4 +1,8 @@
-@import url(./header-nav/header-nav.css);
+@import url(./__link/header-nav__link.css);
+@import url(./__menu-burger/header__menu-burger.css);
+@import url(./__menu-burger-close/header__menu-burger-close.css);
+@import url(./__menu-burger-content/header__menu-burger-content.css);
+@import url(./__nav/header__nav.css);
 
 .header {
   max-width: 100%;
@@ -6,4 +10,5 @@
   border-bottom: rgba(196, 196, 196, 0.2) solid 1px;
   display: flex;
   justify-content: center;
+  z-index: 2;
 }

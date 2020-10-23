@@ -7,3 +7,13 @@
   width: 100%;
   max-width: 608px;
 }
+
+@media screen and (max-width:426px) {
+  .search {
+    display: flex;
+    margin-top: 122px;
+    flex-direction: column;
+    width: 100%;
+    max-width: 608px;
+  }
+}

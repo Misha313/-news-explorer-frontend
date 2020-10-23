@@ -7,3 +7,9 @@
   color: #fff;
   width: 610px;
 }
+
+@media screen and (max-width:426px) {
+  .main__content {
+    padding: 0 16px;
+  }
+}

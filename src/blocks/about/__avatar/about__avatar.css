@@ -6,3 +6,11 @@
   background-size: cover;
   background-image: url(../../../images/me.jpg);
 }
+
+
+@media screen and (max-width: 768px) {
+  .about__avatar {
+    width: 232px;
+    height: 232px;
+  }
+}
