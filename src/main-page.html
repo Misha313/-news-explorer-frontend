@@ -6,10 +6,9 @@
   <meta http-equiv='X-UA-Compatible' content='IE=edge'>
   <title>News explorer</title>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
-  <link rel='stylesheet' type='text/css' media='screen' href='./pages/main-page.css'>
-  <script src='index.js' defer></script>
+  <link rel='stylesheet' type='text/css' media='screen' href='<%=htmlWebpackPlugin.files.css %>'>
+  <script src='<%= htmlWebpackPlugin.files.js %>' defer></script>
 </head>
-
 <body>
   <section class="root">
     <div class="root__main-section">
@@ -23,7 +22,7 @@
           </div>
           <div class="header__menu-burger">
             <div class="header__menu-burger-content">
-              <img src="./images/close.svg" alt="" class="header__menu-burger-close">
+              <img src="<%=require('./images/close.svg')%>" alt="close" class="header__menu-burger-close">
               <a class="header-nav__link " href="main-page.html">Главная</a>
               <a class="header-nav__link " href="saved-articles.html">Сохраненные статьи</a>
               <button class="button button-burger">Авторизоваться</button>
@@ -53,7 +52,7 @@
   </div>
   <section class="search-not-result">
     <div class="search-not-result__content">
-      <img src="./images/not-found.svg" alt="not result" class="search-not-result__image">
+      <img src="<%=require('./images/not-found.svg')%>" alt="not result" class="search-not-result__image">
       <h2  class="search-not-result__title">Ничего не найдено</h2>
       <div class="search-not-result__text preloader__text">К сожалению по вашему запросу ничего не найдено.</div>
     </div>
@@ -124,7 +123,7 @@
   </section>
   <div class="popup" >
     <div class="popup__content">
-      <img src="./images/close.svg" alt="" class="popup__close ">
+      <img src="<%=require('./images/close.svg')%>" alt="" class="popup__close ">
       <h3 class="popup__title">Вход</h3>
       <form class="popup__form" name="login">
         <div class="popup__input-wrapper">
@@ -146,7 +145,7 @@
   </div>
   <div class="popup popup-registr" >
     <div class="popup__content">
-      <img src="./images/close.svg" alt="" class="popup__close popup-registr__close">
+      <img src="<%=require('./images/close.svg')%>" alt="" class="popup__close popup-registr__close">
       <h3 class="popup__title">Регистрация  </h3>
       <form class="popup__form" name="login">
         <div class="popup__input-wrapper">
@@ -174,7 +173,7 @@
   </div>
   <div class="popup popup-success" >
     <div class="popup__content">
-      <img src="./images/close.svg" alt="" class="popup__close popup-success__close">
+      <img src="<%=require('./images/close.svg')%>" alt="" class="popup__close popup-success__close">
       <h3 class="popup__title">Пользователь успешно зарегистрирован!</h3>
       <p class="popup__footer-link popup-success__footer-link">Войти</p>
     </div>
@@ -188,8 +187,8 @@
           <a href="https://praktikum.yandex.ru/profile/web-developer/" target="_blank" class="footer__link">Яндекс.Практикум</a>
         </div>
         <div class="footer__social-nw">
-          <a class="footer__social-link" href="https://github.com/Misha313" target="_blank"><img src="./images/github.svg" alt="github"></a>
-          <a class="footer__social-link" href="https://www.facebook.com/" target="_blank"><img src="./images/facebook.svg" alt="facebook"></a>
+          <a class="footer__social-link" href="https://github.com/Misha313" target="_blank"><img src="<%=require('./images/github.svg')%>" alt="github"></a>
+          <a class="footer__social-link" href="https://www.facebook.com/" target="_blank"><img src="<%=require('./images/github.svg')%>" alt="facebook"></a>
         </div>
       </div>
     </div>

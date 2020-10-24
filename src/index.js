@@ -1,3 +1,5 @@
+import './pages/main-page.css';
+import './pages/saved-articles.css';
 const tooltip = document.querySelector('.news-card__tooltip')
 const popup = document.querySelector('.popup')
 const popupReg = document.querySelector('.popup-registr')
@@ -15,7 +17,7 @@ const buttonAuthBurg = document.querySelector('.button-burger')
 const burgerContent = document.querySelector('.header__menu-burger-content')
 const closeBurger = document.querySelector('.header__menu-burger-close')
 const headerBurger = document.querySelector('.header__menu-burger')
-
+console.log(10);
 
 headerBurger.addEventListener('click', evt => {
   if (evt.target === headerBurger) {
@@ -52,18 +54,8 @@ closeBurger.addEventListener('click', (evt) => {
   evt.target.closest('.header__menu-burger-content').style.display = 'none'
 })
 
-buttonAuthBurg.addEventListener('click', authInBurger)
-closePopupSuccess.addEventListener('click', closePP)
 
-footerPopupReg.addEventListener('click', OpenLoginPP)
-
-footerPopupLogin.addEventListener('click', OpenRegPP)
-closePopupReg.addEventListener('click', closePP)
-
-buttonAuth.addEventListener('click', open)
-
-closePopup.addEventListener('click', closePP)
-
+console.log(10);
 
 saveIcon.forEach(icon => {
   icon.addEventListener('mouseover', (evt) => {
@@ -91,6 +83,19 @@ deleteIcon.forEach(icon => {
     tip.style.display = 'none'
   })
 })
+
+
+buttonAuthBurg.addEventListener('click', authInBurger)
+closePopupSuccess.addEventListener('click', closePP)
+
+footerPopupReg.addEventListener('click', OpenLoginPP)
+
+footerPopupLogin.addEventListener('click', OpenRegPP)
+closePopupReg.addEventListener('click', closePP)
+
+buttonAuth.addEventListener('click', open)
+
+closePopup.addEventListener('click', closePP)
 
 
 
