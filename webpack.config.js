@@ -84,7 +84,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       inject: false,
       template: './src/main-page.html',
-      filename: 'main-page.html'
+      filename: 'index.html'
     }),
     new WebpackMd5Hash(),
     new webpack.DefinePlugin({
