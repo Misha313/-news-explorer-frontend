@@ -5,6 +5,7 @@ const popup = document.querySelector('.popup')
 const popupReg = document.querySelector('.popup-registr')
 
 const saveIcon = document.querySelectorAll('.news-card__save-icon')
+const saveIconOne = document.querySelector('.news-card__save-icon')
 const deleteIcon = document.querySelectorAll('.news-card__delete-icon')
 const closePopup = document.querySelector('.popup__close')
 const closePopupReg = document.querySelector('.popup-registr__close')
@@ -17,7 +18,8 @@ const buttonAuthBurg = document.querySelector('.button-burger')
 const burgerContent = document.querySelector('.header__menu-burger-content')
 const closeBurger = document.querySelector('.header__menu-burger-close')
 const headerBurger = document.querySelector('.header__menu-burger')
-console.log(10);
+
+const cards = document.querySelectorAll('.news-card')
 
 headerBurger.addEventListener('click', evt => {
   if (evt.target === headerBurger) {
@@ -25,6 +27,7 @@ headerBurger.addEventListener('click', evt => {
     return
   }
 })
+
 
 function closePP(evt) {
   evt.target.closest('.popup').style.display = 'none'
@@ -38,7 +41,6 @@ function authInBurger(evt) {
 }
 function open(evt) {
   popup.style.display = 'flex'
-  console.log(evt.target)
 }
 
 function OpenRegPP(evt) {
@@ -55,34 +57,18 @@ closeBurger.addEventListener('click', (evt) => {
 })
 
 
-console.log(10);
-
-saveIcon.forEach(icon => {
-  icon.addEventListener('mouseover', (evt) => {
-    const tip = evt.relatedTarget.querySelector('.news-card__tooltip')
-    console.log(tip)
+cards.forEach(card => {
+  const tip = card.querySelector('.news-card__tooltip')
+  const icon = card.querySelector('.news-card__save-icon')
+  icon.addEventListener('mouseover', evt => {
     tip.style.display = 'flex'
-
   })
-  icon.addEventListener('mouseout', (evt) => {
-    const tip = evt.relatedTarget.querySelector('.news-card__tooltip')
-    console.log(tip)
+  icon.addEventListener('mouseout', evt => {
     tip.style.display = 'none'
   })
 })
-deleteIcon.forEach(icon => {
-  icon.addEventListener('mouseover', (evt) => {
-    const tip = evt.relatedTarget.querySelector('.news-card__tooltip')
-    console.log(tip)
-    tip.style.display = 'flex'
 
-  })
-  icon.addEventListener('mouseout', (evt) => {
-    const tip = evt.relatedTarget.querySelector('.news-card__tooltip')
-    console.log(tip)
-    tip.style.display = 'none'
-  })
-})
+
 
 
 buttonAuthBurg.addEventListener('click', authInBurger)
